@@ -1,0 +1,79 @@
+.menu-item {
+    position: relative;
+    background: var(--g-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.menu-item:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.menu-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 2px;
+    background: var(--g-gold);
+    opacity: .9;
+}
+
+.thumb-wrap {
+    width: 100%;
+    padding-top: 56%;
+    position: relative;
+    overflow: hidden
+}
+
+.menu-item-thumb {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.menu-item-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.menu-item-name {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--text)
+}
+
+.menu-item-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px
+}
+
+.menu-item-category {
+    font-size: 0.85rem;
+    color: var(--muted)
+}
+
+.menu-item-price {
+    font-weight: 600;
+    color: var(--accent)
+}
+
+@media (max-width:480px) {
+    .menu-item-body {
+        padding: 10px
+    }
+}

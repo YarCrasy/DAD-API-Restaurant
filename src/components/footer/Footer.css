@@ -1,0 +1,23 @@
+footer {
+    position: relative;
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #151515, #101010);
+    color: var(--muted);
+    font-size: 0.95rem;
+    padding: 1rem 16px;
+    min-height: 2.5rem;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background: var(--g-gold);
+    opacity: .7;
+}
