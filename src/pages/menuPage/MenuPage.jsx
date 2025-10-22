@@ -34,7 +34,6 @@ function MenuPage() {
     const availableCategories = ["Seafood", "Dessert"];
 
     useEffect(() => {
-        // Load both categories in parallel
         setIsLoading(true);
         setError(null);
 
