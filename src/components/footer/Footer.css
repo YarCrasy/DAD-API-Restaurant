@@ -19,5 +19,5 @@ footer::before {
     top: 0;
     height: 1px;
     background: var(--g-gold);
-    opacity: .7;
+    opacity: 0.7;
 }
